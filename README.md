@@ -8,8 +8,15 @@ Every user can subscribe to some feeds (RSS, ...), then Vert.x will periodically
 
 Users and their subscriptions user are store in MongoDB. Feed entries (RSS news article for example) are stored in Redis.
 
-## How it works :
+## How it run :
 
+mvn package exec:exec
+
+the fat jar is existing:
+
+mvn package exec:exec
+
+## How it works :
 Simple use-case :
 
 * Users register using a simple login / password. An User is a simple document in MongoDB database. (there's no need for an email address in this demo)
